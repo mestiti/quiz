@@ -38,7 +38,8 @@ public class QuizService implements IServiceRestQuiz {
         foundedquiz.setType(quiz.getType());
         foundedquiz.setCreationdate(quiz.getCreationdate());
         foundedquiz.setLimitdate(quiz.getLimitdate());
-        foundedquiz.setCountdown(quiz.getCountdown());
+        foundedquiz.setTypecountdown(quiz.getTypecountdown());
+        foundedquiz.setCountperquiz(quiz.getCountperquiz());
         foundedquiz.setEvaluationmodel(quiz.getEvaluationmodel());
         foundedquiz.setFinalscore(quiz.getFinalscore());
         foundedquiz.setNbquestions(quiz.getNbquestions());

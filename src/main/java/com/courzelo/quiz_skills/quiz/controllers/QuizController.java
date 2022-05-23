@@ -20,8 +20,23 @@ public class QuizController {
 		return  iquiz.getquizbyid(id);
 
 	}
+	@PostMapping("/getscoreqcu/{id}")
+	public float calculatescoreqcu(@PathVariable("id") String id, @RequestBody QuizDTO quizdto) {
+
+		return iquiz.calculatescoreqcu(id,quizdto);
+	}
+
+	@PostMapping("/getscoreqcm/{id}")
+	public float calculatescoreqcm(@PathVariable("id") String id, @RequestBody QuizDTO quizdto) {
 
 
+		return iquiz.calculatescoreqcm(id,quizdto);
+	}
+	@PostMapping("/getscoreopenquestion/{id}")
+	public float calculatescoreopenquestion(@PathVariable("id") String id, @RequestBody QuizDTO quizdto) {
 
+
+		return iquiz.calculatescoreopenquestions(id,quizdto);
+	}
 
 }

@@ -20,7 +20,8 @@ public class QuizDTO {
     private String type;
     private Date limitdate;
     private int nbquestions;
-    private float countdown;
+    private String typecountdown;
+    private float countperquiz;
     private Evaluation_model evaluationmodel;
     private float finalscore;
     private List<QuestionsDTO> questionsList;

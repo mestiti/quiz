@@ -33,8 +33,9 @@ public class Quiz {
     @Temporal (TemporalType.DATE)
     private Date limitdate;
     private int nbquestions;
-    private float countdown;
+    private String typecountdown;
     private String type;
+    private float countperquiz;
     @Enumerated(EnumType.STRING)
     private Evaluation_model evaluationmodel;
     private float finalscore;
